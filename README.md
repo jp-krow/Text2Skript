@@ -1,5 +1,6 @@
 # Text2Skript
-GPT-2 Model to convert text to usable Skript.
+
+Text Generative Model to convert text to usable Skript.
 
 # Files
 
@@ -7,7 +8,34 @@ GPT-2 Model to convert text to usable Skript.
 
 `train-json.txt` is the jsonified training data, this is the data that is used to train the model due to new line limitations with GPT-2. (Must JSONify input sentence for it to understand what to do!)
 
+# Help contribute... Please!
+
+This needs a lot of training data to get right, so I appreciate you for contributing to this project!
+
+You can contribute skript code (unstructured) or structured code (sentence -> skript examples.)
+
+## Example:
+
+unstructured code is valid / working code that doesn't have a premise or isn't linked with a sentence, like if you would make a random skript that launches everyone into the air but there is no sentence that describes it, then it is unstructured.
+
+structured code, on the other hand, is more important since the model needs to understand how to convert sentences into skript.
+
+Example of structured:
+
+```
+make a command that launches everyone into the air
+\`\`\`
+on command /launch:
+  loop all players:
+    push loop-player up 10 blocks
+\`\`\`
+```
+
+Notice the sentence is what you may input to retreive the desired skript.
+
 # Pre-Trained model download
 
-### (2.6 GB, very bad output, only trained for 3 hours)
-https://drive.google.com/u/1/uc?id=1ZiDtNoXqpAfsqIsMbP0X4qXhckprJs6p&export=download
+## 3/19/2021 (1.33 GB, bad output still, needs more training data. Trained for 5 hours on iteration 8000)
+
+
+### [ARCHIVED] 3/18/2021 (2.6 GB, very bad output, only trained for 3 hours) 
