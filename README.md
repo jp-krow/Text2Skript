@@ -22,16 +22,13 @@ structured code, on the other hand, is more important since the model needs to u
 
 Example of structured:
 
-```
-make a command that launches everyone into the air
-\`\`\`
-on command /launch:
-  loop all players:
-    push loop-player up 10 blocks
-\`\`\`
-```
+![structured code](https://media.discordapp.net/attachments/644989803494113296/822688596925349938/unknown.png)
 
 Notice the sentence is what you may input to retreive the desired skript.
+
+## How to submit code
+
+You may DM me `mega b#6696` on Discord, or open up an issue / pull request.
 
 # Pre-Trained model download
 
