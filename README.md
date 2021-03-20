@@ -32,7 +32,7 @@ You may DM me `mega b#6696` on Discord, or open up an issue / pull request.
 
 # Pre-Trained model download
 
-## 3/19/2021 (1.33 GB, bad output still, needs more training data. Trained for 5 hours on iteration 8000)
+## - 3/19/2021 (1.33 GB, bad output still, needs more training data. Trained for 5 hours on iteration 8000)
+https://mega.nz/file/jO40gZyJ#nzF4cthqcwsITnmkbM-RnhYvWZY4iPzfQcZPH17yfvo
 
-
-### [ARCHIVED] 3/18/2021 (2.6 GB, very bad output, only trained for 3 hours) 
+### - [ARCHIVED] 3/18/2021 (2.6 GB, very bad output, only trained for 3 hours) 
