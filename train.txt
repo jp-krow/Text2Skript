@@ -1,5 +1,4 @@
-
-```
+``
 #   Air Drops
 #   Made By Shy#7014 (dm if there are any bugs/issues. Thank you!)
 
@@ -104,9 +103,9 @@ on right click on {@airdropBlock}:
 every {@cooldown} in world {@world}:
     Airdrop_Spawn()
 
-```
+``
 
-```
+``
 #AltMaster made by: SH4D03
 #Dm SH4D03#7511 on discord if you encounter any issues
 #Do /alts for a list of available commands
@@ -257,9 +256,9 @@ command /alts [<offlineplayer>] [<text>]:
 			send " &c/alts reset &7(Deletes all Altmaster data)" to player
 			send "&f&l&l&m-------&f&l< &4&lAlt&7&lMaster &f&l>&f&l&m-------" to player
 
-```
+``
 
-```
+``
 options:
   bypass: antibot.bypass
   kickmessage: &c&lKicked for Failing Captcha
@@ -300,9 +299,9 @@ on any movement:
     cancel event 
     send "{@movemessage}"
 
-```
+``
 
-```
+``
 
 #--------------------------------------------------------
 #Configuration
@@ -584,9 +583,9 @@ on inventory click:
 on inventory close:
     delete {inventory::%player's uuid%}
 
-```
+``
 
-```
+``
 options:
     p: skript.backpack      # Permission needed for the command
     pm: &cNo permission!    # Permission message
@@ -609,9 +608,9 @@ on inventory close:
         loop 54 times:
             set {backpack::%uuid of player%::%loop-number - 1%} to slot "%loop-number - 1%" parsed as an integer of current inventory of player
 
-```
+``
 
-```
+``
 #   Bank Notes Remasterd
 #   Made By Shy#7014 (dm if there are any bugs/issues. Thank you!)
 
@@ -660,9 +659,9 @@ on right click with paper:
     if name of player's held item is "&6&lBank Note":
         deposit(player)
 
-```
+``
 
-```
+``
 command /fakeop <player>:
        permission: fakeop.use
        trigger:
@@ -754,9 +753,9 @@ command /features:
             message "&7"
             message "&e&lBORED TROLL COMMANDS &8| &7&ohelp"
 
-```
+``
 
-```
+``
 #
 # By @Adxm#1343
 #
@@ -822,9 +821,9 @@ on death:
 				wait 3 ticks
 				set {bounty::%victim's uuid%} to 0
 
-```
+``
 
-```
+``
 options:
   bypass: anticaptcha.bypass
   kickmessage: &4Failed Captcha
@@ -861,9 +860,9 @@ on any movement:
 on quit:
   delete {captcha::%player's uuid%}
 
-```
+``
 
-```
+``
 #Chairs+ skripted by: SH4D03
 #Donations: paypal.me/SH4D03
 
@@ -918,9 +917,9 @@ function chair(p: player, b: location):
 			kill {_entity}
 		wait 5 tick
 
-```
+``
 
-```
+``
 # ChatFeelings owo
 
 # -Permissions-
@@ -1295,9 +1294,9 @@ command /stalk [<player>]:
 			else:
 				send "&cSorry, you can not do that :("
 
-```
+``
 
-```
+``
 #This skript is made by XI_DEMO_IX!
 #If you have any issuses please contact X̸I̶_̵D̷E̷M̷O̷_̸I̸X̴#8207 on discord!
 
@@ -1320,9 +1319,9 @@ on chat:
         else if player has permission "mute.talk":
             uncancel event
 
-```
+``
 
-```
+``
 #
 # Chatty - made by WolfyGameYT
 #
@@ -1510,9 +1509,9 @@ on quit:
 	if {@join/leave msg} is off:
 		stop
 
-```
+``
 
-```
+``
 #Made by xlr100#6932 (For any bugs)
 
 #--------------------------------------------------------
@@ -1567,9 +1566,9 @@ command /clear [<text>] [<text>] [<text>]:
             send "&e/clear chat &7Clears the chat"
             send "&7-----------------{@prefix}&7-----------------------"
 
-```
+``
 
-```
+``
 
 # CommandBlocker by Farwl@FarwlOSS
 
@@ -1623,9 +1622,9 @@ command /commandblocker [<text>]:
 		else:
 			send "&c/cb [add/remove/list] [command]"
 
-```
+``
 
-```
+``
 options:
     storage: doors
     prefix: &c&lDoors »
@@ -1736,9 +1735,9 @@ on chat:
             else:
                 send "{@prefix} {@input length}"
 
-```
+``
 
-```
+``
 Options:
     padblock: gold block
     defaultforce: 2
@@ -1808,9 +1807,9 @@ on walk on {@padblock}:
         set {_d} to (direction from player's location to location 150 meters in front of player)
         push player {_d} with force ({padforce::%location of event-block%}*2)
 
-```
+``
 
-```
+``
 on join:
   if {balance::%player's uuid%} is not set:
     set {balance::%player's uuid%} to 0
@@ -1858,9 +1857,9 @@ command /economy:
     send "&c&lUpdates & Patch notes will be coming!"
     send ""
 
-```
+``
 
-```
+``
 options:
   headerbaltopmsg: &6===== BalTop ===== 	# Message above baltop message
 
@@ -2020,9 +2019,9 @@ on command "/help Balance":
   send " "
   send "&6Balance Help"
 
-```
+``
 
-```
+``
 options:
   elevatorline1: [elevator] # message that must be written to setup sign
   elevatorline1set: &f[Elevator] #What the message will be set to to make sure it has been set
@@ -2061,9 +2060,9 @@ on right click on sign:
             send "{@teleportdownmessage}"
             stop
 
-```
+``
 
-```
+``
 #
 # The Essentials of Essentials - made by Lupusor, Austin/Mesyl2 and TheMandalorian HEAVILY EDITED by BeanyDoesStuff_/ztimhirsch
 # It was garbage and now is better - ztimhirsch
@@ -2666,9 +2665,9 @@ command /give <item types> <integer = 1> [to] [<player>]:
         give arg-2 of arg-1 to player if arg-3 is not set
         send "{@colour1}You have recieved some {@colour2}%arg-1% {@colour1}from {@colour3}%player%" to argument 3
 
-```
+``
 
-```
+``
 # AUTHOR: 3meraldK, 3meraldK#3099
 # VERSION: v1.0
 # ADDONS: none
@@ -2785,9 +2784,9 @@ command /friends [<text>] [<offlineplayer>]:
 		else:
 			send "&cError: &7Use &b/friends &7command to process"
 
-```
+``
 
-```
+``
 #
 # Gamemode - made by WolfyGameYT
 #
@@ -2878,9 +2877,9 @@ command /gamemode:
 		send "&1&l-----------------------------------------"
 		send ""
 
-```
+``
 
-```
+``
 #
 #
 # Report any issues to @Adxm#1343
@@ -2898,9 +2897,9 @@ on death:
     add loop-item to inventory of block at victim's location
   clear victim's inventory
 
-```
+``
 
-```
+``
 #Hearts skripted by: SH4D03
 
 
@@ -2951,9 +2950,9 @@ on damage:
 		set {_hearts-display} to "%{_hearts-display}%{@color2}{@symbol}"
 	send action bar "{@color1}%{_hearts-display}%" to attacker
 
-```
+``
 
-```
+``
 options:
   P: &c&lITEMGUI&7
  
@@ -3015,9 +3014,9 @@ on chat:
     delete {itemgui::editlore2-event::%player's uuid%}
     delete {itemgui::editlore-lore::%player's uuid%}
 
-```
+``
 
-```
+``
 #LiteVanish by block of grass.
 command /vanish:
   permission: skript.vanish
@@ -3057,9 +3056,9 @@ on player join:
     hide player from all players where [input's group = "Group_name"]
     hide player from all players where [input's group = "Group_name"]
 
-```
+``
 
-```
+``
 #Lootbox skripted by: SH4D03
 
 #Donations: paypal.me/SH4D03
@@ -3143,9 +3142,9 @@ command /lootbox [<text>] [<number=1>] [<player=%player%>]:
 			send " &b/lootbox remove (Must be holding item)" to player
 			send " &b/lootbox list" to player
 
-```
+``
 
-```
+``
 options:
 	prefix: &8[&eNUMBERS&8]
 
@@ -3184,9 +3183,9 @@ on chat:
 			delete {answer}
 			add {pay} to player's balance
 
-```
+``
 
-```
+``
 #
 #
 # Script developed by @Adxm#1343
@@ -3525,9 +3524,9 @@ function minesPlayerbetween(p: player, l1: location, l2: location) :: boolean:
             if minesPlayerbetweenCheck(z coord of location of {_p}, z coord of {_l1}, z coord of {_l2}) = true:
                 return true
 
-```
+``
 
-```
+``
 options:
     p: skript.admin                                 # Permission required for the command
     pm: &cYou don't have access to that command.    # Message sent if player's permission is insufficient
@@ -3554,9 +3553,9 @@ command /openender [<offlineplayer>]:
         else:
             open ender chest of {_p} to player
 
-```
+``
 
-```
+``
 on load:
   set {server::playerslots} to 250
 
@@ -3574,9 +3573,9 @@ on join:
   if number of online players is more than {server::playerslots}:
     console command "/kick %player% This server is full!"
 
-```
+``
 
-```
+``
 #PlayerTracker skripted by: SH4D03
 
 
@@ -3621,9 +3620,9 @@ on join:
 			delete {_height}
 		wait 15 ticks
 
-```
+``
 
-```
+``
 # Private Vaults by MrScopes
 # Version 1.0
 
@@ -3694,9 +3693,9 @@ on inventory close:
 		set {vaultItems::%{_p}%::%{_n}%::%loop-number - 1%} to slot "%loop-number - 1%" parsed as an integer of current inventory of player
 	delete {opened::%player%}
 
-```
+``
 
-```
+``
 function getTop() :: objects:
   if {-top::sort} ? 1 second ago < now:
     loop all offline players:
@@ -3719,9 +3718,9 @@ command /playtime [<text>]:
             set {_top::*} to getTop()
             open metadata tag "TopPlaytime" of ("d" parsed as a player) to player
 
-```
+``
 
-```
+``
 #Made by xlr100#6932, message me for any bug
 options:
     #Change the following according to your preference
@@ -3775,9 +3774,9 @@ on inventory close:
         set {{@storage}::id::%{_id}%::items::%loop-value%} to slot loop-value of player's current inventory
     delete metadata "backpack" of player
 
-```
+``
 
-```
+``
 #Made by xlr100#6932 (For any bugs)
 #version: 1
 #--------------------------------------------------------
@@ -4169,9 +4168,9 @@ on connect:
         else:
             kick player due to "&cYou are perm banned! &7Since: &b%{bans::%{_id}%::when}% &7Staff: &b%{bans::%{_id}%::staff}% &7Reason: &b%{bans::%{_id}%::reason}%"
 
-```
+``
 
-```
+``
 options:
 	Minimum-x: -500 #Minimum x of randomtp
 	Maximum-x: 500 #Maximum x of randomtp
@@ -4215,9 +4214,9 @@ Command RandomTP:
 							set {randomtp::%player%} to now 
 							stop
 
-```
+``
 
-```
+``
 options:
   prefix: &3[&7Rank Vouchers&3]
   addvoucher: rank.add
@@ -4356,9 +4355,9 @@ function switchCaseFor(text: text, to-uppercase: boolean) :: text:
     set {_new} to "%{_new}%%{_char}%"
   return {_new}
 
-```
+``
 
-```
+``
 #
 #
 # 
@@ -4444,9 +4443,9 @@ function setLatest(p: player, type: text, report: text):
 	set {latest::type} to {_type}
 	set {latest::report} to {_report}
 
-```
+``
 
-```
+``
 #ScoreBoard skripted by: SH4D03
 #ScoreBoard allows you to customise an individual scoreboard for each world
 #For a full list of commands, do /scoreboard in game
@@ -4575,9 +4574,9 @@ on command "skript reload {@filename}":
 		execute console command "script reload {@filename}"
 		send "{@prefix} {@colour1}Successfully reloaded Version 1.0" to player
 
-```
+``
 
-```
+``
 #   Sell Wands Empowered
 #   Made By Shy#7014 (dm if there are any bugs/issues. Thank you!)
 
@@ -4634,9 +4633,9 @@ on right click with a blaze rod:
             sell(player, clicked block)
             cancel event
 
-```
+``
 
-```
+``
 command /kit [<text>]:
     trigger:
         if arg 1 is not set:
@@ -4706,9 +4705,9 @@ command /kit [<text>]:
             else:
                 message "&cInvalid kit."
 
-```
+``
 
-```
+``
 options:
     debug: false
     codes: 0|1|2|3|4|5|6|7|8|9|a|b|c|d|e|f|k|l|m|n|o|r
@@ -5013,9 +5012,9 @@ function notepadCycle(p: player):
       set {notepad.%{_uuid}%::%{_x}%} to ""
     set {notepad.%{_uuid}%::%{_c}%} to {notepad.%{_uuid}%::%{_x}%}
 
-```
+``
 
-```
+``
 options:
 	permission: report.Admin   # Permission
 	Prefix: &6Server &7        # Prefix
@@ -5191,9 +5190,9 @@ function menu(p:player,page:number):
 				menu({_p},{_page})
 			exit loop
 
-```
+``
 
-```
+``
 #SkriptMinesLite skripted by: SH4D03
 
 # Please note that this is Version 1.0 so there may be some inefficiencies or bugs
@@ -5503,9 +5502,9 @@ on join:
 	delete {SkriptMinesLite::%player's uuid%::pos1}
 	delete {SkriptMinesLite::%player's uuid%::pos2}
 
-```
+``
 
-```
+``
 # AUTHOR: 3meraldK
 # VERSION: 1.1
 
@@ -5612,9 +5611,9 @@ command /spawn:
 		else:
 			spawn(player)
 
-```
+``
 
-```
+``
 # Author: Ofus-Will#4688
 
 # config
@@ -5772,9 +5771,9 @@ on left click:
         else:
             send "{@permission-message}"
 
-```
+``
 
-```
+``
 #SpyMaster skripted by: SH4D03
 
 
@@ -5805,9 +5804,9 @@ on command:
 		{spy::%uuid of loop-player%} is set
 		send "&5&lSpy &6» &6%executor% &6used &b/%full command%" to loop-player
 
-```
+``
 
-```
+``
 # CONFIG
 
 options:
@@ -5864,9 +5863,9 @@ command {@command} [<text>]:
 				add player to {staffchat::*}
 				send "{@prefix} {@scenable}"
 
-```
+``
 
-```
+``
 options:
 		#Please Type The Name of The file you put this code into with out .sk
 		# Example: StaffChat
@@ -6008,9 +6007,9 @@ on chat:
       cancel event
       make player execute command "sc %subtext of message from characters 2 to (length of message)%"
 
-```
+``
 
-```
+``
 #SuperChat skripted by: SH4D03
 #DM SH4D03#7511 on discord if you find any bugs
 #All options below are configurable
@@ -6389,9 +6388,9 @@ on inventory click:
 			cancel event
 			close inventory of player
 
-```
+``
 
-```
+``
 options:	
 	cooldown: 10 minutes #formated as (Amount of time) (Seconds, Minutes, days ect...)
 	avoid: water or lava #Avoid spawning formated as (Block) or (Block) ect...
@@ -6431,9 +6430,9 @@ Command Surface:
 						send "{@BlockAvoidMessage}"
 						stop
 
-```
+``
 
-```
+``
 # Ultra Polls
 
 Options:
@@ -6509,9 +6508,9 @@ command /vote [<text>]:
 		else:
 			send "{@1}&lx {@2}There is no active poll."
 
-```
+``
 
-```
+``
 options:
 
   spawn-with-selector: true   # Give player's the world selector on join.
@@ -6617,9 +6616,9 @@ on chat:
     send "{@P} Setup complete! &3%{wgui::motd::%player's uuid%}%&7's MOTD has been set to &3%message%&7!"
     delete {wgui::motd::%player's uuid%}
 
-```
+``
 
-```
+``
 on skript load:
 	login to "xxx" with the name "beans"
 
@@ -7925,9 +7924,9 @@ command /warn [<offlineplayer>] [<text>]:
 
 # end staff.sk
 
-```
+``
 
-```
+``
 on skript load:
     login to "xxx" with the name "beans"
  
@@ -9519,9 +9518,9 @@ command /withdraw [<text>]:
                     remove arg 1 from {stored::%player's uuid%::*}
                     set lore of tool to "%lore of tool%||&d%arg 1%"
 
-```
+``
 
-```
+``
 every tick:
 	loop all players:
 		if {car::%loop-player%} is set:
@@ -11176,9 +11175,9 @@ on explode:
 	loop exploded blocks:
 		cancel event if y coordinate of loop-block <= 4
 
-```
+``
 
-```
+``
 on load:
 	delete {ac::*}
 	
@@ -13921,9 +13920,9 @@ on right click with any boat:
 on portal:
 	cancel event
 
-```
+``
 
-```
+``
 # core.sk
  
 function player(p: offline player, showLevel: boolean = false, showClan: boolean = false, showVanished: boolean = false, showBounty: boolean = false) :: text:
@@ -16157,7 +16156,121 @@ function setLevel(p: player):
 function requiredXp(p: player) :: number:
 	return ({level::%{_p}%} * 1000) ^ 1
 
-```
+``
+
+``
+# 𝔹𝕒𝕤𝕚𝕔 𝔼𝕤𝕤𝕖𝕟𝕥𝕚𝕒𝕝𝕤 𝕊𝕜𝕣𝕚𝕡𝕥
+# Made by snowkitkat. If there are bugs DM me on Discord. snowkitkat#9365
+# Version: 0.1 - Please don't change.
+
+# -------------------------------------------[Death Messages]---------------------------------------------------
+
+on death of a player:
+	broadcast "<red>%player%'s life was taken."
+
+# -------------------------------------[ - Chat Formating / Joins - ]------------------------------------------
+
+on chat:
+	set the chat format to "<light grey>%player%<dark grey>: <light grey>%message%"
+	
+on join:
+	if {Joins::*} does not contain player's uuid:
+		broadcast "<cyan>%player%<light grey> has joined for the first time!"
+
+# ----------------------------------------[ Custom Commands ] --------------------------------------
+
+command /fly: 
+	aliases: /fly
+	description: "Give the player the ability to fly!"
+	permission: bes.fly
+	permission message: "<red>You do not have permission to execute this command!"
+	trigger:
+		if {fly.%player%} is not set:
+			send "<light grey>Flight mode is now <cyan>enabled<light grey>." to player
+			set player's flight mode to true
+			set {fly.%player%} to true
+			stop
+		set player's flight mode to false
+		delete {fly.%player%}
+		send "<light grey>Flight mode is now <cyan>disabled<light grey>."
+		stop
+		
+
+command /creative:
+	aliases: /gmc
+	permission: bes.creative
+	permission message: "<red>You do not have permission to execute this command!"
+	trigger:
+		set gamemode of player to creative
+		send "<light grey>Your gamemode was updated to <cyan>creative<light grey>."
+
+command /survival:
+	aliases: /gms
+	permission: bes.survival
+	permission message: "<red>You do not have permission to execute this command!"
+	trigger:
+		set gamemode of player to survival
+		send "<light grey>Your gamemode was updated to <cyan>survival<light grey>."
+		
+command /github:
+	aliases: /gb
+	permission: bes.github
+	permission message: "<red>You do not have permission for this command!"
+	trigger:
+		send "<light grey>You can find our github<link:https://github.com/snowkitkat/Basic-Essentials><cyan> here<light grey>."
+		
+command /broadcast <text>:
+	permission: bes.broadcast
+	trigger:
+		broadcast "<light grey><bold>Server Message<dark grey>: <light grey>%arg-1%"
+
+command /setspawn:
+	permission: bes.setspawn
+	permission message: "<red>Haha, no."
+	trigger:
+		set {spawn} to player's location
+		send "<light grey>Successfully set spawn to <cyan>%player's location%"
+
+command /spawn:
+	trigger:
+		teleport player to {spawn}
+		send "<light grey>Successfully teleported to <cyan>spawn<light grey>!"
+
+command /kickall:
+	executable by: console
+	trigger:
+		kick all players due to "<light grey>You have been kicked from the server! %newline% %newline%<light grey>Kick all executed by <cyan>Console"
+		
+command /kick <player> <text>: 
+	permission: bes.kick
+	permission message: "<red>Nice try, smart one!"
+	trigger:
+		kick arg 1 due to "<light grey>You have been kick from the server by <cyan>%player%<light grey> for<cyan> %arg-2%"	
+
+command /ban <player> <text>: 
+	permission: bes.ban
+	permission message: "<red>Nice try, smart one!"
+	trigger:
+		ban arg 1 due to "<light grey>You have been banned from the server by <cyan>%player%<light grey> for<cyan> %arg-2%"			
+		kick arg 1 due to "<light grey>You have been banned from the server by <cyan>%player%<light grey> for<cyan> %arg-2%"		
+		send "<light grey>Successfully banned <cyan>%arg-1%"
+		
+command /unban <offline player>: 
+	permission: bes.unban
+	permission message: "<red>Nice try, smart one!"
+	trigger:
+		unban arg 1
+		send "<light grey>Successfully unbanned <cyan>%arg-1%"
+		
+command /oban <offline player> <text>: 
+	permission: bes.offlineban
+	permission message: "<red>Nice try, smart one!"
+	trigger:
+		ban arg 1 due to "<light grey>You have been banned from the server by <cyan>%player%<light grey> for<cyan> %arg-2%"			
+		kick arg 1 due to "<light grey>You have been banned from the server by <cyan>%player%<light grey> for<cyan> %arg-2%"		
+		send "<light grey>Successfully banned <cyan>%arg-1%"
+``
+
 when a player joins, send “hello” to player
 ```
 on join:
@@ -16232,8 +16345,8 @@ on death:
 
 I want a custom join message to say "[+] Player has joined"
 ```
-On join:
-    Set join message to "&8[&a+&8] &r%player% has joined"
+on join:
+    set join message to "&8[&a+&8] &r%player% has joined"
 ```
 
 create command /hello with cooldown of 10 seconds stored in {cooldown::%player%} with message "You need to wait %remaining time% before saying hello again!" and when executed, broadcast "Hello from %player%!"
@@ -16293,4 +16406,12 @@ command /everyone:
     executable by: players, console
     trigger:
         broadcast "everyone pro"
+```
+
+make a command that makes a bomb that is 5 blocks in radius that explodes in 4 seconds
+```
+command /bomb:
+  trigger:
+    loop all blocks in radius 2 of player:
+      set loop-block to tnt
 ```
