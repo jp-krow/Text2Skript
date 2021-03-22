@@ -36,3 +36,9 @@ You may DM me `mega b#6696` on Discord, or open up an issue / pull request.
 https://mega.nz/file/jO40gZyJ#nzF4cthqcwsITnmkbM-RnhYvWZY4iPzfQcZPH17yfvo
 
 ### - [ARCHIVED] 3/18/2021 (2.6 GB, very bad output, only trained for 3 hours) 
+
+## Credits
+
+https://www.github.com/snowkitkat
+
+https://github.com/Skriptify/skriptify
